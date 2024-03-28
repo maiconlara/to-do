@@ -49,7 +49,7 @@ class TaskController extends Controller
     {
         $task->update($request->validated());
 
-        return response()->json($task);
+        return response()->json($task, JsonResponse::HTTP_OK);
     }
 
     /**
